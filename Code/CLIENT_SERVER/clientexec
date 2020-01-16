@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo docker rm -f client
+sudo chmod +x client/start
+sudo docker build --rm -t client .
+sudo docker run -ti --privileged=true -v /sys/fs/cgroup/:/sys/fs/cgroup:ro --name client -p 90:90 -w /libreriaMMS/examples/tls_client_example client

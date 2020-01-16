@@ -1,0 +1,2 @@
+#!/bin/bash
+./tls_client_example $1

@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo docker build -t tcpdump . -f - <<EOF
+FROM ubuntu
+RUN apt-get update && apt-get install -y tcpdump && apt-get install -y net-tools && apt-get install -y vim && apt-get install -y ssldump
+RUN mkdir tcpdump
+COPY tcpdumper/ tcpdump/
+RUN chmod +x /tcpdump/start
+EOF
+
+sudo docker rm -f /tcpdumper
+sudo docker run -it --name tcpdumper --privileged=true --net=container:arpspoofer -v /sys/fs/cgroup/:/sys/fs/cgroup:ro -w /tcpdump/ tcpdump

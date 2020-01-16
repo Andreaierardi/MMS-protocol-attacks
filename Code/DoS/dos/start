@@ -1,0 +1,3 @@
+#!/bin/bash
+websocket-bench -a 40000 -c 2000 wss://$1:3782 &
+

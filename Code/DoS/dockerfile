@@ -1,0 +1,14 @@
+FROM ubuntu:18.10
+
+RUN apt-get install bash
+RUN apt-get update
+RUN apt-get install -y net-tools
+RUN apt-get install -y vim
+RUN apt-get install -y npm
+RUN npm install -g websocket-bench
+RUN rm -rf /var/cache/apk/*
+
+RUN mkdir attack
+COPY dos/ attack/
+
+

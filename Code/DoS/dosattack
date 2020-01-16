@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker build --rm -t dos .
+sudo docker run -ti --privileged=true -v /sys/fs/cgroup/:/sys/fs/cgroup:ro -w /attack/ dos

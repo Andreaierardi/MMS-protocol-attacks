@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo docker rm -f server
+sudo chmod +x server/start
+sudo docker build --rm -t server .
+sudo docker run -ti --privileged=true -v /sys/fs/cgroup/:/sys/fs/cgroup:ro -p 100:100 --name server -w /libreriaMMS/examples/tls_server_example server

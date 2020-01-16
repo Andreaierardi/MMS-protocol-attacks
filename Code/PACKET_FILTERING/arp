@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo docker rm -f /arpspoofer
+sudo docker build -t arpspoof . -f - <<EOF
+FROM debian
+RUN apt-get update && apt-get install -y dsniff
+RUN mkdir arp/
+COPY arpspoof/ arp/
+EOF
+
+sudo docker run -it --net=container:mitm --name arpspoofer -w /arp/ arpspoof
+

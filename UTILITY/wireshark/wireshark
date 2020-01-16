@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo docker pull manell/wireshark
+sudo docker run -ti --net=host --privileged -v $HOME:/root:ro -e XAUTHORITY=/root/.Xauthority -e DISPLAY=$DISPLAY manell/wireshark

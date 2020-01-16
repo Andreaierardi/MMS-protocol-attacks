@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo docker container rm -f mitm
+sudo docker rm -f mitm_machine
+sudo docker build -t mitm_machine . 
+sudo docker run -d --cap-add=NET_ADMIN -v=/tmp/downgrade:/work --name=mitm mitm_machine
+
+
+
+sudo docker exec -it mitm /bin/bash
