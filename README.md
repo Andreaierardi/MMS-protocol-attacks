@@ -5,7 +5,7 @@ List of cybersecurity attacks on client and server MMS under TLS.
 I realised these attacks during my intership in the university in collaboration with Ricerca sul Sistema Energetico(RSE spa).
 
 <h2>Technologies </h2>
-<li> Docker and Docker containers </li>
+<li> Docker and containers </li>
 <li> Transport Layer Security(TLS) </li>
 <li> Manufacturing Message Specification(MMS) protocol</li>
 
