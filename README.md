@@ -42,6 +42,7 @@ I realised these attacks during my intership in the university in collaboration 
 
 <p>
   <strong> Run client and server first! </strong><br>
+  
 Terminal3 (arp)  <code>  ./arp </code>   <br>
 Terminal4 (tcpdump)  <code> ./tcpdump </code>  <br>
 Terminal3 (arp)  <code>  ./start [SERVER_IP] [CLIENT_IP]  </code>    (Example : <code>  ./start 172.17.0.3 172.17.0.2 </code> ) <br>
@@ -52,6 +53,7 @@ Terminal1  <code> ./start </code>
 <h2> WebSocket Denial of Service </h2>
 <p>
   <strong> Run client and server first! </strong><br>
+  
 Terminal3  (dos) <code>  ./dosattack </code>  <br>
 Terminal3  (dos) <code>  ./start [IP_SERVER] </code>  <br>
 Terminal1  <code> ./start </code>
@@ -61,12 +63,12 @@ Terminal1  <code> ./start </code>
 <h2> Packet Filtering </h2>
 <p>
   <strong> Run client and server first! </strong><br>
-
+  
 Terminal3 (packetfilter) <code> ./packetfilter</code>   <br>
 Terminal4 (arp) <code> ./arp </code>  <br>
 Terminal4 (arp) <code> ./start [IP_SERVER] [IP_CLIENT]</code>  <br>
 
-Then run one of these two scripts:
+Then run one of these two scripts: <br>
 • Terminal3(packetfilter) <code> ./start_inject </code> <br>
 • Terminal3 (packetfilter)<code> ./start_pending </code> <br>
  </p>
