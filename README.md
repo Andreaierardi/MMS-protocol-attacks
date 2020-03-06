@@ -63,9 +63,10 @@ Terminal1  <code> ./start </code>
   <strong> Run client and server first! </strong><br>
 
 Terminal3 (packetfilter) <code> ./packetfilter</code>   <br>
-Terminal4 (arp) <code> ./arp <br>
+Terminal4 (arp) <code> ./arp </code>  <br>
 Terminal4 (arp) <code> ./start [IP_SERVER] [IP_CLIENT]</code>  <br>
 
+Then run one of these two scripts:
 • Terminal3(packetfilter) <code> ./start_inject </code> <br>
 • Terminal3 (packetfilter)<code> ./start_pending </code> <br>
  </p>
