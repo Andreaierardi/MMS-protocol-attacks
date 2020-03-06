@@ -22,7 +22,7 @@ I realised these attacks during my intership in the university in collaboration 
 <li> Downgrade </li>
 
 
-<h1> Launch attacks </h1>
+<h1> Run attacks </h1>
 
 <h2> Run Client and Server </h2>
 <p> 
